@@ -1,0 +1,100 @@
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+    height: 1500px;
+    background-color: white;
+  }
+  .wrapper {
+    display: flex;
+    height: 1500px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .redbox {
+    background-color: salmon;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+  }
+  .bluebox {
+    background-color: skyblue;
+    height: 100%;
+    width: 70%;
+    color: white;
+    margin-top: 100px;
+  }
+  ._title {
+    font-size: 40px;
+    padding: 50px;
+  }
+  .yellowbox {
+    margin-top: 100px;
+    background-color: yellow;
+    height: 100%;
+    width: 30%;
+    border: 5px solid grey;
+  }
+  .greenbox {
+    height: 30px;
+    width: 70px;
+    background-color: lightgreen;
+    position: absolute;
+    top: 85px;
+    left: 65%;
+  }
+
+/* answer */
+/* body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+  height: 1500px;
+}
+nav {
+  background-color: #ff7879;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+ .box {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+.blueBox {
+  display: inline-block;
+  background-color: #7ed6df;
+  width: 70%;
+}
+
+.blueBox h1 {
+  color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.yellowBox {
+  background-color: #ffcc02;
+  width: 28%;
+  border: 5px solid grey;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.greenBox {
+  background-color: #bbdc58;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+  z-index: 2;
+} */

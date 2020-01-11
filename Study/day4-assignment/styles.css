@@ -1,0 +1,65 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+.blueBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e90ff;
+}
+.redBox {
+  height: 200px;
+  width: 200px;
+  background-color: #ff6b81;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.greyBox {
+  height: 50px;
+  width: 50px;
+  background-color: #d8d8d8;
+}
+.greyBox:hover:nth-child(2) {
+  background-color: #ff6b81;
+}
+
+/* 
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: sans-serif;
+  background-color: #1c90ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #ff6b81;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tinyBox {
+  background-color: #d8d8d8;
+  width: 50px;
+  height: 50px;
+}
+
+.tinyBox:nth-child(2):hover {
+  background-color: red;
+} */
