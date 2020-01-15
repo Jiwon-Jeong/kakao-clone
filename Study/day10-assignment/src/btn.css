@@ -1,0 +1,55 @@
+.screen__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen__btns .btn__sns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.btn__signIn {
+  border-radius: 17px;
+  width: 240px;
+  height: 35px;
+  align-items: center;
+  background-color: #de2336;
+  text-align: center;
+  font-size: 10px;
+  color: #f7f7f7;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.screen__btns .btn__screen {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.button__sns {
+  margin: 0 10px 0 10px;
+  width: 115px;
+  height: 35px;
+  padding-top: 13px;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 17px;
+  color: #f7f7f7;
+}
+
+.btn__sns .sns__facebook {
+  background-color: #3e508a;
+}
+
+.btn__sns .sns__twitter {
+  background-color: #5297f0;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/17a692e2c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="phone">
+      <div class="phone__screen">
+        <div class="screen__head"></div>
+        <div class="screen__input">
+          <span class="screen__name">Sign in</span>
+          <div class="input__email inputBox n-txt">
+            <input
+              type="text"
+              placeholder="email"
+              class="n-txt"
+              id="inputBox"
+              required
+              autofocus
+            />
+          </div>
+          <div class="input__pw inputBox">
+            <input
+              type="text"
+              placeholder="password"
+              class="n-txt"
+              required
+              autofocus
+            />
+          </div>
+          <div class="input__forget r-txt">Forget Password?</div>
+          <div class="input__remember">
+            <div class="input__check">
+              <!-- <i class="far fa-check-square"></i> -->
+              <input type="checkbox" id="cb" />
+              <label for="cb">Remember Me</label>
+            </div>
+            <!-- <span class="input__remeberMe n-txt">Remember Me</span> -->
+          </div>
+        </div>
+        <div class="screen__btns">
+          <div class="btn__signIn">Sign in</div>
+          <div class="btn__screen">OR</div>
+          <div class="btn__sns">
+            <span class="sns__facebook button__sns">facebook</span>
+            <span class="sns__twitter button__sns">twitter</span>
+          </div>
+        </div>
+        <div class="screen__detail">
+          <div class="detail__account">
+            <span class="txt1 n-txt">need an account?</span>
+            <span class="txt2 r-txt">Sign up</span>
+          </div>
+          <div class="detail__pw">
+            <span class="txt1 n-txt">forgot your password?</span>
+            <span class="txt2 r-txt">Retrive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
