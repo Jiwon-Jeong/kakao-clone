@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f9fafc;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: #010d3c;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3e68ff;
+}
+
+.phone {
+  margin-top: 50px;
+  background-color: white;
+  width: 350px;
+  height: 700px;
+  border-radius: 40px;
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
+    30px 30px 40px rgba(118, 146, 180, 0.18);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  background: rgb(241, 242, 246);
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.phone .screen__head {
+  align-self: center;
+  width: 160px;
+  height: 20px;
+  background-color: #fcfbfd;
+  border-radius: 0 0 30px 30px;
+  margin-left: 75px;
+}
+
+.header {
+  padding-top: 25px;
+  background: linear-gradient(rgba(241, 242, 246, 0.2), rgb(241, 242, 246) 75%);
+  background-color: #f8f8f8;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.header .header__top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 80x;
+  /* opacity: 0.5; */
+  padding: 0px 20px;
+  margin-bottom: 15px;
+}
+
+.header__top i {
+  font-size: 16px;
+}
+
+.header .header__photos {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -3px;
+  padding: 0px 20px;
+  padding-left: 10px;
+}
+
+.header__photos .header__photo {
+  width: 50%;
+  height: 80px;
+  /* background-image: url("https://s-ec.bstatic.com/images/hotel/max1024x768/761/76149626.jpg"); */
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  box-shadow: inset 0 -5px 30px -1px #000;
+}
+
+.header__photos .photo1 {
+  background-image: url(https://i1.wp.com/shri.vn/hcm/wp-content/uploads/2018/09/mlavietnamesebeefsalad-recipe.jpg?resize=570%2C390&ssl=1);
+  background-size: cover;
+}
+
+.header__photos .photo2 {
+  background-image: url(https://i0.wp.com/shri.vn/hcm/wp-content/uploads/2018/09/vanilla-creme-brulee-1.jpg?resize=600%2C600&ssl=1);
+  background-size: cover;
+}
+
+.header__photos .photo3 {
+  background-image: url(https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/2017/08/main/fire-roasted-tomato-basil-soup-1709p63.jpg?itok=E0VGnlJw);
+  background-size: cover;
+}
+.header__photos .photo4 {
+  background-image: url(https://mahatmarice.com/wp-content/uploads/2019/08/FSRD-Breakfast-Smoothie-with-Rice-and-Peanut-Butter-050.jpg);
+  background-size: cover;
+}
+
+.header .header__tags {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding: 0px 20px;
+  margin-top: 25px;
+}
+
+.header .header__title-wrapper {
+  padding: 15px 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__view {
+  font-size: 10px;
+  font-weight: 700;
+  color: #f56977;
+}
+
+.header h3 {
+  font-size: 15px;
+  color: black;
+}
+
+.main {
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.tab-bar {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  bottom: -5px;
+  box-shadow: 5px 5px 40px rgba(118, 146, 180, 0.5);
+}
+
+.tab-bar .tab-bar__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.tab-bar__list .tab-bar__tab {
+  color: #9aa9c2;
+  padding-top: 10px;
+  width: 12%;
+  text-align: center;
+}
+
+.tab-bar__list .tab-bar__tab:nth-child(2) {
+  color: #f56977;
+}
+
+.main__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px;
+  font-size: 16px;
+}
+
+.main .main__item {
+  width: 280px;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  box-shadow: 5px 5px 20px rgba(118, 146, 180, 0.3);
+}
+
+.main i {
+  color: #f56977;
+}
+
+.item-column {
+  margin: 0px;
+  align-self: center;
+}
+.item-column .item-count {
+  font-size: 10px;
+  opacity: 0.6;
+}
