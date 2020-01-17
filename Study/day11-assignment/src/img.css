@@ -1,0 +1,33 @@
+.img-column {
+  margin-left: 60px;
+  margin-top: 130px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+/* .img-column .images {
+  width: 60px;
+  height: 60px;
+} */
+
+.img-column .img,
+.img-column .img_ {
+  border-radius: 30%;
+  width: 40px;
+  height: 40px;
+}
+
+.img-column .imgBox {
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  background-color: #3967ff;
+  color: white;
+  font-size: 15px;
+  align-self: center;
+  text-align: center;
+  padding-top: 18px;
+}

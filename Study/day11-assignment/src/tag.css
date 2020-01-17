@@ -1,0 +1,17 @@
+.tag-column {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.tag {
+  height: 25px;
+  background-color: #dee4fa;
+  color: #3967ff;
+  font-size: 9px;
+  align-self: center;
+  font-weight: 700;
+  border-radius: 30% 30% 30% 0;
+  padding: 8px 6px 4px 6px;
+}
