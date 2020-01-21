@@ -14,7 +14,7 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+        <span class="status-bar__clock" id="time-result"></span>
       </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
@@ -30,10 +30,14 @@
       </div>
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <a href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
@@ -41,7 +45,7 @@
       <header class="friends__header">
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+            <img src="images/avatar-me.jpeg" class="g-avatar friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Jiwon Jeong
@@ -57,7 +61,7 @@
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="class friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
+            <img src="images/plus-friend.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Plus Friend
@@ -67,23 +71,107 @@
         </div>
       </div>
       <ul class="friends__list">
-        <h5 class="class friends__title">Friends 25</h5>
+        <h5 class="class friends__title">Friends 5</h5>
         <li class="friends__friend friend friend--lg">
           <div class="friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
+            <img src="images/avatar-friend.jpg" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 Best Friend
               </span>
               <span class="friend__status">
-                whatever
+                .
               </span>
             </div>
           </div>
           <div class="firend__column">
             <div class="friend__now-listening">
               <span>
-                Bambina - Vampire Weekend
+                Smells Like Teen Spirit
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar-friend2.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Dory
+              </span>
+              <span class="friend__status">
+                Hi!
+              </span>
+            </div>
+          </div>
+          <div class="firend__column">
+            <div class="friend__now-listening">
+              <span>
+                Life In Color - One Rep
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar-friend3.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Woody
+              </span>
+              <span class="friend__status">
+                To Infinity...
+              </span>
+            </div>
+          </div>
+          <div class="firend__column">
+            <div class="friend__now-listening">
+              <span>
+                Tender - Blur
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar-friend4.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Buzz Lightyear
+              </span>
+              <span class="friend__status">
+                And Beyond!
+              </span>
+            </div>
+          </div>
+          <div class="firend__column">
+            <div class="friend__now-listening">
+              <span>
+                Love Ya! - HYUKOH
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar-friend5.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Wall-E
+              </span>
+              <span class="friend__status">
+                10101010010
+              </span>
+            </div>
+          </div>
+          <div class="firend__column">
+            <div class="friend__now-listening">
+              <span>
+                Dancing In the Moonlight
                 <i class="fas fa-play"></i>
               </span>
             </div>
@@ -119,4 +207,10 @@
       <span class="bigScreen__text">Please make your screen small!</span>
     </div>
   </body>
+  <script type="text/javascript">
+    var d = new Date();
+    var currentTime = d.getHours() + ":" + d.getMinutes();
+    var result = document.getElementById("time-result");
+    result.innerHTML = currentTime;
+  </script>
 </html>

@@ -11,6 +11,7 @@
 
 .friend__avatar.g-avatar {
   width: 70px;
+  height: 70px;
 }
 
 .friend__avatar.m-avatar {
@@ -20,6 +21,7 @@
 .friend .friend__column {
   display: flex;
   align-items: center;
+  margin: 5px 0px;
 }
 
 .friend .friend__avatar {

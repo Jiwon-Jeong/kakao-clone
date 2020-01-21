@@ -14,7 +14,7 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+        <span class="status-bar__clock" id="time-result"></span>
       </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
@@ -30,13 +30,19 @@
       </div>
       <div class="header__header-column">
         <span class="header__icon">
-          <i class="fas fa-search"></i>
+          <a href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
         </span>
         <span class="header__icon">
-          <i class="far fa-comment"></i>
+          <a href="index.html">
+            <i class="far fa-comment"></i>
+          </a>
         </span>
         <span class="header__icon">
-          <i class="fas fa-cog"></i>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+          </a>
         </span>
       </div>
     </header>
@@ -46,7 +52,10 @@
           <a href="chat.html">
             <div class="chats__chat friend friend--lg">
               <div class="friend__column">
-                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
+                <img
+                  src="images/avatar-friend.jpg"
+                  class="m-avatar friend__avatar"
+                />
                 <div class="friend__content">
                   <span class="friend__name">
                     Best Friend
@@ -58,7 +67,32 @@
               </div>
               <div class="friend__column">
                 <span class="chat__timestamp">
-                  March 8
+                  Jan 14
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="chats__chat chat">
+          <a href="chat2.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/avatar-friend5.jpg"
+                  class="m-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Wall-E
+                  </span>
+                  <span class="friend__bottom-text">
+                    10101000101
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  Jan 12
                 </span>
               </div>
             </div>
@@ -68,7 +102,7 @@
     </main>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__list-item">
+        <li class="na1v__list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="far fa-user"></i
           ></a>
@@ -95,4 +129,10 @@
       <span class="bigScreen__text">Please make your screen small!</span>
     </div>
   </body>
+  <script type="text/javascript">
+    var d = new Date();
+    var currentTime = d.getHours() + ":" + d.getMinutes();
+    var result = document.getElementById("time-result");
+    result.innerHTML = currentTime;
+  </script>
 </html>
